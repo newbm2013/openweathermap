@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OpenWeatherMVP</string>
+    <string name="temperature">%d C</string>
+    <string name="city">Rostov-on-Don</string>
+    <string name="empty_state_text_noting_to_show">Nothing to show!</string>
+    <string name="empty_state_text_download_error">Error!</string>
+    <string name="refresh">Refresh</string>
+</resources>
