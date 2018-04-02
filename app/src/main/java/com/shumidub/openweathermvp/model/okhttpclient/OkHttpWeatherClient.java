@@ -5,8 +5,8 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.shumidub.openweathermvp.model.SimpleWeatherFieldResponce;
-import com.shumidub.openweathermvp.model.SimpleWeatherResposeModel;
+import com.shumidub.openweathermvp.model.SimpleWeatherResponse;
+import com.shumidub.openweathermvp.model.MainWeatherResponsePart;
 import com.shumidub.openweathermvp.model.exceptions.NoLoadingDataException;
 
 import java.io.IOException;
@@ -59,8 +59,8 @@ public class OkHttpWeatherClient {
                         .build();
 
                 Response response = null;
-                SimpleWeatherResposeModel simpleWeatherResposeModel = null;
-                SimpleWeatherFieldResponce simpleWeatherFieldResponce = null;
+                MainWeatherResponsePart simpleWeatherResposeModel = null;
+                SimpleWeatherResponse simpleWeatherFieldResponce = null;
                 GsonBuilder builder = new GsonBuilder();
                 Gson gson = builder.create();
 
@@ -71,7 +71,7 @@ public class OkHttpWeatherClient {
                     if (response.isSuccessful()) {
                         String json = response.body().string();
                         Log.d("DTAG", "getWeather: response = " + json );
-                        simpleWeatherFieldResponce = gson.fromJson(json, SimpleWeatherFieldResponce.class);
+                        simpleWeatherFieldResponce = gson.fromJson(json, SimpleWeatherResponse.class);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

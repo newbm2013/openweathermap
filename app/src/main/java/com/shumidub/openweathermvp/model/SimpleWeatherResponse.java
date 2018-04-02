@@ -6,12 +6,12 @@ import com.google.gson.annotations.SerializedName;
  * Created by Артем on 28.03.2018.
  */
 
-public class SimpleWeatherFieldResponce {
+public class SimpleWeatherResponse {
 
     @SerializedName("main")
-    SimpleWeatherResposeModel simpleWeatherResposeModel;
+    MainWeatherResponsePart simpleWeatherResposeModel;
 
-    public SimpleWeatherResposeModel getSimpleWeatherResposeModel() {
+    public MainWeatherResponsePart getSimpleWeatherResposeModel() {
         return simpleWeatherResposeModel;
     }
 
