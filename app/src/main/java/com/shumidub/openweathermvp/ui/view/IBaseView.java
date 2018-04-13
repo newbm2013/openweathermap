@@ -11,7 +11,7 @@ import com.shumidub.openweathermvp.ui.presenter.IBasePresenter;
 
 public interface IBaseView {
 
-    //todo can it ovveride without paramentre?
+    //todo can it ovveride without paramentre? -у нас это пустой интерфейс, без методов
     void attachPresenter(IBasePresenter iBasePresenter);
 
     void detachPresenter();

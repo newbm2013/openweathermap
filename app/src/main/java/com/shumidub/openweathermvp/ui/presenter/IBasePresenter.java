@@ -17,4 +17,10 @@ public interface IBasePresenter {
 
     void onCreate();
 
+    void onDestroy();
+
+    void onStart();
+
+    void onResume();
+
 }

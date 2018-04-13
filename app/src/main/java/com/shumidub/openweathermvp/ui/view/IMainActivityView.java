@@ -14,4 +14,6 @@ public interface IMainActivityView extends IBaseView {
 
     public void showEmptyState();
 
+    //TODO и также нужны goTo methods
+
 }

@@ -17,6 +17,8 @@ public class RepositoryWeather {
       какая зона ответственности презентера и какая репозитория?
       */
 
+    //Todo ответственность презентарв логика отображения а репозитория совия
+
     static OkHttpWeatherClient okHttpWeatherClient;
 
 

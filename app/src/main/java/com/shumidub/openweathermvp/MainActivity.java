@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //TODO и такие штуки можно писать
+        mainActivityPresenter.onDestroy();
         detachPresenter();
         detachView();
     }
@@ -107,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
         btnRefresh.setVisibility(View.VISIBLE);
     }
 
-    //todo: how we do it?
+    //todo: how we do it? - You can use ButterKnife.apply - on each method you need
     private void setInvisibleAllView(){
         ButterKnife.apply(allViews, setViewsInvisibleAction);
     }
@@ -123,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements IMainActivityView
     }
 
 
-    //todo: is it need?
+    //todo: is it need? - ДЕЛАТЬ НЕ ТАК, нужно просто имплементить вью, а не полем в классен
     public void detachView(){
         iMainActivityView = null;
     }

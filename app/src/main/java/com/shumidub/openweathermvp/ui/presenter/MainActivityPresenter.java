@@ -34,7 +34,9 @@ public class MainActivityPresenter implements IBasePresenter {
 
     String lastCity = "Rostov-on-Don";
 
-    //todo - нужны методы onCreate and other lifecycle methods?
+    //todo - нужны методы onCreate and other lifecycle methods? Можно если нужны, не ообязательны
+
+
 
     IMainActivityView view;
 
@@ -166,6 +168,9 @@ public class MainActivityPresenter implements IBasePresenter {
     public void showEmptyState() {
         view.showEmptyState();
     }
+
+
+    //Todo можно в принципе и так - но предпочел бы в вью пооичерендно в онкреате вызывать методы презентера
 
     @Override
     public void onCreate() {
